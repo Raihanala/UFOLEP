@@ -88,6 +88,19 @@ public class User {
 	public int hashCode() {
 		return Objects.hash(club, id, nom, password, prenom, role, username);
 	}
+	
+	public List<Score> getScores() {
+		return scores;
+	}
+	public void setScores(List<Score> scores) {
+		this.scores = scores;
+	}
+	public Cible getCible() {
+		return cible;
+	}
+	public void setCible(Cible cible) {
+		this.cible = cible;
+	}
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
